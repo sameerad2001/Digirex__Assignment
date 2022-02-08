@@ -1,6 +1,8 @@
 ## **Digirex assignment** : 
 > develop an api where all the click events and the browser events will be dumped into a database
 
+***Please read the installation instructions located below the details section (API test routes/ urls are also mentioned)***
+
 ### Details
 - The data model/ schema is as follows :
 ```js
@@ -29,6 +31,8 @@ const location = geoip.lookup(ip); // location of the user
 
 
 ### How to install and run 
+
+
 1. Clone the repo
     ```bash
     git clone sameerad2001/Digirex__Assignment
@@ -41,12 +45,16 @@ const location = geoip.lookup(ip); // location of the user
     ```bash
     npm i
     ```
-4. Start the server (localhost 4000)
+4. Run mongoDB locally (on a separate terminal) 
+    ```bash
+    mongod
+    ```
+5. Start the server (localhost 4000)
     ```
     node app.js
     ```
-5. Open postman (view demo to check working) or proceed to step 6
-6. If postman is not accessible open a browser and visit : `http://localhost:4000/eventLog`
+6. Open postman (view demo to check working) or proceed to step 6
+7. If postman is not accessible open a browser and visit : `http://localhost:4000/eventLog`
 
     ```
     Other Routes:
@@ -57,3 +65,15 @@ const location = geoip.lookup(ip); // location of the user
     4. Fetch the events created by a particular user (GET) : localhost:4000/userDetails/ <id>
     3. Fetch user frequency (GET) : localhost:4000/userFrequency
     ```
+
+### Demo 
+
+**Please note that the `location` and `ip` properties could not be computed due to the website running locally hence their values show up as `null` and `::1` respectively**
+
+<img src = "https://github.com/sameerad2001/Digirex__Assignment/blob/master/Demo/Demo.gif" alt = "Website Demo"/>
+
+<img src = "https://github.com/sameerad2001/Digirex__Assignment/blob/master/Demo/Demo1.jpg" alt = "Website Demo"/>
+<img src = "https://github.com/sameerad2001/Digirex__Assignment/blob/master/Demo/Demo2.jpg" alt = "Website Demo"/>
+<img src = "https://github.com/sameerad2001/Digirex__Assignment/blob/master/Demo/Demo3.jpg" alt = "Website Demo"/>
+
+
