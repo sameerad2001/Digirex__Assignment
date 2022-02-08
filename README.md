@@ -1,7 +1,17 @@
 ## **Digirex assignment** : 
 > develop an api where all the click events and the browser events will be dumped into a database
 
-***Please read the installation instructions located below the details section (API test routes/ urls are also mentioned)***
+***Please read the installation instructions located below the details section***
+
+### What can the API do and how to check?
+
+1. Fetch all the events (GET) : `localhost:4000/EventLog`
+2. "Dump" new event (POST) : `localhost:4000/EventLog`
+3. Fetch location frequency (GET) : `localhost:4000/locationFrequency`  
+4. Fetch the events created by a particular user (GET) : `localhost:4000/userDetails/ <id>`
+3. Fetch user frequency (GET) : `localhost:4000/userFrequency`
+
+> Please view the demo section located at the end to check the functionality (examples provided) 
 
 ### Details
 - The data model/ schema is as follows :
@@ -56,15 +66,7 @@ const location = geoip.lookup(ip); // location of the user
 6. Open postman (view demo to check working) or proceed to step 6
 7. If postman is not accessible open a browser and visit : `http://localhost:4000/eventLog`
 
-    ```
-    Other Routes:
-
-    1. Fetch all the events (GET) : localhost:4000/EventLog
-    2. "Dump" new event (POST) : localhost:4000/EventLog
-    3. Fetch location frequency (GET) : localhost:4000/locationFrequency  
-    4. Fetch the events created by a particular user (GET) : localhost:4000/userDetails/ <id>
-    3. Fetch user frequency (GET) : localhost:4000/userFrequency
-    ```
+> Test routes/URLs mentioned above
 
 ### Demo 
 
@@ -77,3 +79,8 @@ const location = geoip.lookup(ip); // location of the user
 <img src = "https://github.com/sameerad2001/Digirex__Assignment/blob/master/Demo/Demo3.jpg" alt = "Website Demo"/>
 
 
+---
+
+Sameer Ahmed <br/>
+Email : <sameerad2001@gmail.com> <br/>
+Linkdin : <https://www.linkedin.com/in/sameer-ahmed-0b7902176/>
